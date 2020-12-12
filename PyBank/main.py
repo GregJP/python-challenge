@@ -17,11 +17,6 @@ with open(bdpath) as bdfile:
         dates.append(row[0])
         each_profit.append(int(row[1]))
 
-with open(bdpath) as bdfile:
-    
-    bdreader = csv.reader(bdfile,delimiter=',')
-    next(bdreader)
-
     for x in range(1,months):
         change.append(each_profit[x]-each_profit[x-1])
 
