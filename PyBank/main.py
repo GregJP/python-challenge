@@ -44,5 +44,5 @@ with open(bdpath) as bdfile:
     line67 = f"Greatest Profit Increase: {max_date} (${max_change})\nGreatest Profit Decrease: {min_date} (${min_change})"
     print(f"{line12}\n{line345}\n{line67}")    
  
-    with open('budget_data.txt','w') as out:
+    with open('analysis/budget_data.txt','w') as out:
         out.writelines(f"{line12}\n{line345}\n{line67}")
